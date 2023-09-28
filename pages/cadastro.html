@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/cadastro.css"> cadastro
+    <link rel="stylesheet" href="../css/menu-mobile.css"> mobile
+    <link rel="stylesheet" href="../css/style.css"> 
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+
+    <header>
+        <h1>
+            <img src="../images/easycarros-logo 1.png" alt="nome da empresa">
+        </h1>
+    
+        <!--MENU MOBILE -->
+        <input type="checkbox" id="control-nav">
+        <label for="control-nav" class="control-nav"></label>
+        <label for="control-nav" class="control-nav-close"></label>
+    
+        <!--MENU BAR -->
+        <nav>
+            <ul>
+                <li>
+                    <a class="active" href="#">Home</a>
+                </li>
+    
+                <li>
+                    <a href="#">Carros</a>
+                </li>
+    
+                <li>
+                    <a href="#">Pagamento</a>
+                </li>
+    
+                <li>
+                    <a href="#">Histórico</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Dados Pessoais</h2>
+        <form action="#" method="post">
+
+            <label for="cpf">CPF:</label>
+            <input class="cpf" type="string" name="CPF" placeholder="___.___.___-__" required maxlength="14">
+
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="data_nascimento">Data de Nascimento:</label>
+            <input type="date" id="data_nascimento" name="data_nascimento" required>
+
+            <label for="telefone">Telefone:</label>
+            <input class="tel" type="tel" id="telefone" name="telefone" placeholder="(__)_____-____"required maxlength="11">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+
+            <label for="cep">CEP:</label>
+            <input class="cep" type="string" name="CPF" placeholder="_____-___" required maxlength="9">
+
+            <label for="rua">Rua:</label>
+            <input type="text" id="rua" name="rua" required>
+
+            <label for="numero">Número:</label>
+            <input type="number" id="numero" name="numero" required>
+
+            <label for="bairro">Bairro:</label>
+            <input class="bairro" type="string" id="bairro" name="bairro" required>
+
+            <label for="pais">País:</label>
+<select id="pais" name="pais" required>
+    <option selected>Selecione o país</option>
+    <option value="AR">Argentina</option>
+    <option value="AU">Austrália</option>
+    <option value="BS">Bahamas</option>
+    <option value="BO">Bo</option>
+    <option value="BR">Brasil</option>
+    <option value="CA">Canadá</option>
+    <option value="HR">Croácia</option>
+    <option value="PH">Filipinas</option>
+    <option value="PY">Paraguai</option>
+    <option value="RO">Romênia</option>
+    </select>
+
+            <label for="estado">Estado:</label>
+<select id="estado" name="estado" required>
+    <option value="" disabled selected>Selecione o estado</option>
+    <option value="AC">Acre</option>
+    <option value="AL">Alagoas</option>
+    <option value="AP">Amapá</option>
+    <option value="AM">Amazonas</option>
+    <option value="BA">Bahia</option>
+    <option value="CE">Ceará</option>
+    <option value="DF">Distrito Federal</option>
+    <option value="ES">Espírito Santo</option>
+    <option value="GO">Goiás</option>
+    <option value="MA">Maranhão</option>
+    <option value="MT">Mato Grosso</option>
+    <option value="MS">Mato Grosso do Sul</option>
+    <option value="MG">Minas Gerais</option>
+    <option value="PA">Pará</option>
+    <option value="PB">Paraíba</option>
+    <option value="PR">Paraná</option>
+    <option value="PE">Pernambuco</option>
+    <option value="PI">Piauí</option>
+    <option value="RJ">Rio de Janeiro</option>
+    <option value="RN">Rio Grande do Norte</option>
+    <option value="RS">Rio Grande do Sul</option>
+    <option value="RO">Rondônia</option>
+    <option value="RR">Roraima</option>
+    <option value="SC">Santa Catarina</option>
+    <option value="SP">São Paulo</option>
+    <option value="SE">Sergipe</option>
+    <option value="TO">Tocantins</option>
+</select>
+
+            <label for="cidade">Cidade:</label>
+            <input class="cidade" type="string" id="cidade" name="cidade" required>
+
+            <button type="submit">Alterar cadastro</button>
+        </form>
+    </div>
+
+    <div class="historico-container">
+        <h2>Histórico de Corridas</h2>
+        <form action="#" method="post">
+
+            <ul class="lista-corridas">
+                <li class="corrida">
+                    <div class="corrida-info">
+                        <p>Data: 10/09/2023</p>
+                        <p>Origem: Aeroporto Internacional</p>
+                        <p>Destino: Centro da Cidade</p>
+                        <p>Valor: R$ 25,00</p>
+                    </div>
+                    <button class="ver-detalhes">Ver Detalhes</button>
+                </li>
+                <li class="corrida">
+                    <div class="corrida-info">
+                        <p>Data: 05/09/2023</p>
+                        <p>Origem: Casa</p>
+                        <p>Destino: Shopping Center</p>
+                        <p>Valor: R$ 15,00</p>
+                    </div>
+                    <button class="ver-detalhes">Ver Detalhes</button>
+                </li>
+                <!-- Adicione mais corridas conforme necessário -->
+            </ul>
+        </div>
+
+    <div class="clearfix"></div> <!-- Elemento de limpeza -->
+
+    <footer class="footer">
+        <div class="row">
+            <div class="footer-coluna">
+                <h4>Sobre </h4>
+                <ul>
+                    <li><a href="javascript:;" onclick="msg()">Sobre nós</a></li>
+                    <li><a href="javascript:;" onclick="msg()">Nossos serviços</a></li>
+                    <li><a href="javascript:;" onclick="msg()">Politica de privacidade</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-coluna">
+                <h4>Para você</h4>
+                <ul>
+                    <li><a href="javascript:;" onclick="msg()" class="b-click">Minhas reservas</a></li>
+                    <li><a href="javascript:;" onclick="msg()">Fidelidade</a></li>
+                    <li><a href="javascript:;" onclick="msg()">Cadastre-se</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-coluna">
+                <h4>Dúvidas</h4>
+                <ul>
+                    <li><a href="javascript:;" onclick="msg()">FAQ</a></li>
+                    <li><a href="javascript:;" onclick="msg()">Seja um franqueado</a></li>
+                    <li><a href="javascript:;" onclick="msg()">Política de pagamento </a></li>
+                </ul>
+            </div>
+            <div class="footer-coluna">
+                <h4>Redes</h4>
+                <div class="social-links">
+                    <a href="javascript:;" onclick="msg()"><i class="fab fa-facebook-f"></i></a>
+                    <a href="javascript:;" onclick="msg()"><i class="fab fa-twitter"></i></a>
+                    <a href="javascript:;" onclick="msg()"><i class="fab fa-instagram"></i></a>
+                    <a href="javascript:;" onclick="msg()"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <p>&copy; Alguns direitos reservados | &lt;GLNTV&gt;</p>
+    </footer>
+</body>
+</html>

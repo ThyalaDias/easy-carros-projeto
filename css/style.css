@@ -1,0 +1,804 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500&family=Poppins:wght@200;300;600;800&display=swap');
+
+*,
+*:before,
+*:after {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+
+html {
+
+font-family: -apple-system, 'Segoe UI', Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+overflow-x: hidden;
+}
+
+
+img {
+max-width: 100%;
+}
+
+
+header {
+background: white;
+height: auto;
+padding: 0 50px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+
+h1 img {
+width: 60px;
+}
+
+
+/*MENU BAR*/
+
+nav {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+nav ul li a {
+color: black;
+text-decoration: none;
+font-size: 17px;
+}
+
+nav ul a {
+list-style: none;
+display: flex;
+align-items: center;
+font-family: 'Poppins', sans-serif;
+font-weight: 500px;
+color: black;
+transition: 0.5s;
+}
+
+nav ul li {
+padding: 20px;
+}
+
+
+nav li {
+display: inline-block;
+margin-top: 10px;
+margin-left: 15px;
+font-size: 1.2rem;
+font-weight: 600;
+font-family: 'Poppins', sans-serif;
+}
+
+
+nav ul a:hover {
+transition: 0.5s;
+color: #11d8be;
+}
+
+
+nav ul li::after {
+/*linha do hover*/
+display: block;
+content: '';
+width: 0%;
+background-color: #11d8be;
+transition: 0.5s;
+height: 2px;
+}
+
+nav ul li:hover::after {
+width: 100%;
+}
+
+
+
+
+/*PAGE INDEX HTML*/
+
+/* Estilos para a seção de pesquisa */
+.search-container {
+background-color: #f0f0f0;
+padding: 50px;
+}
+
+.search-box {
+display: flex;
+align-items: center;
+
+}
+
+.search-box input[type="text"],
+.search-box input[type="date"] {
+flex: 1;
+height: 50px;
+margin-right: 10px;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 15px;
+}
+
+#search-button {
+background-color: #11d8be;
+color: #fff;
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+cursor: pointer;
+}
+
+
+
+/* Estilos para a seção sobre o modo de funcionamento */
+.about-container {
+background-color: #ffff;
+padding: 3%;
+text-align: center;
+}
+
+.about-image img {
+max-width: 70%;
+
+}
+
+/* Estilos para o grid de carros populares */
+.popular-cars-container {
+padding: 20px;
+text-align: center;
+background-color: #f0f0f0;
+}
+
+.popular-cars-container h2 {
+font-size: 24px;
+margin-bottom: 20px;
+}
+
+.popular-cars-grid {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 20px;
+}
+
+.popular-car-card {
+background-color: white;
+border: 3px solid #ddd;
+border-radius: 10px;
+padding: 20px;
+text-align: center;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+border-radius: 5px;
+flex: 0 0 calc(33.33% - 20px);
+transition: transform 0.2s; /* Adicionamos uma transição para suavizar o efeito de hover */
+}
+
+.popular-car-card:hover {
+transform: translateY(-5px); /* Movendo o card para cima quando o mouse passar por cima */
+}
+
+.popular-car-card img {
+max-width: 100%;
+height: auto;
+margin-bottom: 10px;
+}
+
+.rent-button {
+background-color: #11d8be;
+color: #fff;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+margin-top: 10px;
+}
+
+.rent-button:hover {
+background-color: #11d8be;
+}
+
+
+
+
+
+
+/*FOOTER */
+
+.row {
+display: flex;
+flex-wrap: wrap;
+}
+
+
+.footer {
+background-color: #b9aba18c;
+padding: 50px 10px 20px 10px;
+}
+
+.footer p {
+font-family: 'Poppins', sans-serif;
+font-size: 0.7rem;
+padding-top: 20px;
+text-align: center;
+}
+
+.footer-coluna {
+width: 25%;
+padding: 10px 80px;
+}
+
+.footer-coluna h4 {
+font-family: 'Poppins', sans-serif;
+font-size: 1.2rem;
+color: black;
+text-transform: capitalize;
+margin-bottom: 35px;
+font-weight: 600;
+position: relative;
+}
+
+.footer-coluna h4::before {
+content: '';
+position: absolute;
+left: 0;
+bottom: -10px;
+background-color: #11d8be;
+height: 2px;
+box-sizing: border-box;
+width: 80px;
+}
+
+ul {
+list-style: none;
+}
+
+.footer-coluna ul li:not(:last-child) {
+margin-bottom: 10px;
+}
+
+.footer-coluna ul li a {
+font-size: 1rem;
+font-family: 'Poppins', sans-serif;
+text-transform: capitalize;
+text-decoration: none;
+font-weight: 600;
+color: black;
+display: block;
+transition: all 0.3s ease;
+}
+
+.footer-coluna ul li a:hover {
+color: #11d8be;
+padding-left: 8px;
+}
+
+.footer-coluna .social-links a {
+display: inline-block;
+height: 40px;
+width: 40px;
+background-color: black;
+margin: 0 10px 10px 0;
+text-align: center;
+line-height: 40px;
+border-radius: 50%;
+color: #ffffff;
+transition: all 0.5s ease;
+}
+
+.footer-coluna .social-links a:hover {
+color: #11d8be;
+background-color: black;
+}
+
+#mensagem {
+transition: all 0.52s;
+background: #FFF;
+border: #777 solid 1px;
+box-shadow: 1px 1px 5px rgba(0, 0, 0, .52);
+border-radius: 20px;
+position: fixed;
+top: -200px;
+width: 20%;
+padding: 25px 10px;
+text-align: center;
+left: 40%;
+opacity: 0;
+
+}
+
+#mensagem.ver {
+top: 200px;
+opacity: 1;
+}
+
+.formulario #mensagem {
+width: 40%;
+}
+
+.formulario #mensagem.ver {
+top: 300px;
+opacity: 1;
+z-index: 100
+}
+
+
+
+
+/*RESPONSIVIDADE*/
+
+@media screen and (max-width:1300px) {
+
+    html,
+    body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    }
+}
+
+
+
+
+@media screen and (max-width: 1080px) {
+
+    /*GERAL*/
+    html,
+    body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    }
+
+    #carousel.ativ,
+    #carousel.login {
+    background-color: #9a90901d;
+    background-size: 100%;
+    ;
+    }
+
+    .navigation-auto,
+    .navigation-auto.ativ,
+    .manual-btn {
+    display: none;
+    }
+
+    .footer-coluna .social-links {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(20px, 1fr));
+    justify-content: space-between;
+    padding: 0 0 5px 0;
+    }
+
+    /*INDEX*/
+    main {
+    padding-top: 20px;
+    padding-bottom: 100px;
+    }
+
+    main p {
+    padding-bottom: 70px;
+    font-size: 1rem;
+    }
+
+    .empresa {
+    display: grid;
+    grid-template-columns: repeat(autofill, minmax(200px, 1fr));
+    justify-content: space-between;
+    padding: 60px 50px 150px 50px;
+    }
+
+    .motivacao aside {
+    width: 40%;
+    text-align: center;
+    justify-content: center;
+    padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .motivacao div img {
+    width: 90%;
+    object-fit: cover;
+    }
+
+    .motivacao h3 {
+    text-align: center;
+    }
+
+    .motivacao p {
+    padding: 0 40px 0 40px;
+
+    }
+
+    /*ATIVIDADES PAGINA*/
+    .container-titulo {
+    position: static;
+    padding: 100px 100px 10px;
+    }
+
+    .container-titulo h2,
+    .container-titulo h4 {
+    text-align: center;
+    }
+
+    .modalidades {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
+    justify-content: space-between;
+    padding: 60px 100px 135px;
+    }
+
+    .texto-filiacao {
+    padding-top: 50px;
+    font-size: 1rem;
+    }
+
+    .texto-filiacao p {
+    padding-bottom: 20px;
+    }
+
+    /*REGISTRO PAGINA */
+    .bg-formulario {
+    min-height: 90vh;
+    padding: 20px;
+    }
+
+    #mensagem {
+    width: 30%;
+    padding: 25px 10px;
+    left: 40%;
+    text-align: center;
+    }
+
+    #mensagem.ver {
+    top: 500px;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 940px) {
+
+    /*GERAL*/
+
+    html,
+    body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    }
+
+    .footer-coluna .social-links {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(50px, 1fr));
+
+    }
+
+    .footer-coluna {
+    padding: 40px 40px 20px 40px;
+    }
+
+    .footer {
+    padding-top: 10px;
+    }
+
+
+    /*INDEX*/
+
+    main {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    }
+
+    main section {
+    padding-bottom: 30px;
+    }
+
+    .atividades {
+
+    display: inline-block;
+    width: 80%;
+    align-items: center;
+    }
+
+    .atividades div {
+    margin-top: 5%;
+    }
+
+
+    .atividades article {
+    width: 80%;
+    }
+
+    .empresa {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    justify-content: space-between;
+    padding: 60px 50px 150px 50px;
+    gap: 20px;
+    }
+
+    .motivacao h3 {
+    text-align: center;
+    }
+
+    .motivacao p {
+    padding: 0 40px 0 40px;
+
+    }
+
+    /*ATIVIDADES PAGINA*/
+    .texto-filiacao {
+    padding-top: 0;
+    }
+
+    /*REGISTRO PAGINA*/
+    .bg-formulario {
+    min-height: 100vh;
+    width: auto;
+    padding: 20px;
+    }
+
+    #mensagem {
+    width: 40%;
+    padding: 25px 10px;
+    left: 30%;
+    }
+
+    #mensagem.ver {
+    top: 500px;
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width:640px) {
+
+    /*GERAL */
+    #carousel {
+    height: 250px;
+    }
+
+    .footer {
+    padding-top: 10px;
+    }
+
+
+
+    header {
+    padding: 10px;
+    }
+
+    /*INDEX*/
+    main {
+    padding-bottom: 100px;
+    }
+
+
+    main p {
+    padding-bottom: 30px;
+    }
+
+
+    .motivacao {
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px 30px 30PX
+    }
+
+    .motivacao aside {
+    width: 100%;
+    padding-right: 0;
+
+    }
+
+    .motivacao div img {
+    width: 100%;
+    object-fit: cover;
+    }
+
+    .motivacao h3 {
+    text-align: center;
+    }
+
+    .motivacao p {
+    padding: 0 40px 0 40px;
+
+    }
+
+    /*ATIVIDADES PAGINA*/
+
+    .modalidades {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    justify-content: space-between;
+    padding: 60px 50px 100px;
+    }
+
+    .texto-filiacao {
+    padding-top: 0;
+    }
+
+
+    /*CONTATO*/
+
+
+    .motivacao {
+    flex-direction: column;
+    justify-content: center;
+    }
+
+    .motivacao {
+    padding: 100px 50px 50PX;
+    }
+
+    .motivacao aside {
+    width: 100%;
+    padding-right: 0;
+
+    }
+
+    .motivacao div img {
+    width: 100%;
+    object-fit: cover;
+    }
+
+    /*REGISTRO PAGINA*/
+
+    .bg-formulario {
+    min-height: 90vh;
+    width: auto;
+    padding: 20px 50px;
+    }
+
+
+    .container-formulario .container-image,
+    .container-image h5 {
+    display: none;
+    }
+
+    .formulario {
+    width: 100%;
+    justify-content: center;
+    right: 0;
+    }
+
+    .form-content {
+    width: inherit;
+    padding: 0 30px;
+    }
+
+    #mensagem {
+    width: 40%;
+    padding: 25px 10px;
+    left: 30%;
+    }
+
+    #mensagem.ver {
+    top: 100px;
+    }
+    }
+
+
+
+
+
+
+@media screen and (max-width:490px) {
+
+    /*GERAL*/
+    .row {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    }
+
+    .footer {
+    display: flex;
+    }
+
+    .footer p {
+    display: none;
+    }
+
+    .footer-coluna {
+    display: inline-table;
+    padding: 20px 30px 20px;
+    }
+
+    .footer-coluna .social-links {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(50px, 1fr));
+
+    }
+
+    /*INDEX*/
+
+    main {
+    padding: 0px 30px;
+    }
+
+
+    .empresa {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(100px, 1fr));
+    justify-content: space-between;
+    padding: 60px 50px 150px 50px;
+    gap: 20px;
+    }
+
+    .motivacao {
+    padding: 100px 30px 30PX
+    }
+
+    /*ATIVIDADES PAGINA*/
+
+    .modalidades {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(150px, 1fr));
+    justify-content: space-between;
+    padding: 60px 50px 100px;
+    }
+
+    .texto-filiacao {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    }
+
+    .saiba-mais-ativ {
+    margin-bottom: 60px;
+    }
+
+    .container-titulo {
+    padding: 50px 50px 0;
+    }
+
+    .container-titulo h2 {
+    font-size: 1.7rem;
+    padding-bottom: 20px;
+    }
+
+
+    /*REGISTRO PAGINA*/
+
+    .bg-formulario {
+    min-height: 90vh;
+    padding: 20px 50px;
+    }
+
+    .container-formulario {
+    padding: 10px 10px 20px 10px;
+    }
+
+    .container-formulario .container-image,
+    .container-image h5 {
+    display: none;
+    }
+
+    .formulario {
+    width: 100%;
+    justify-content: center;
+    }
+
+    .form-content {
+    width: inherit;
+    padding: 0 10px;
+    }
+
+    }

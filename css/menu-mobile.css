@@ -1,0 +1,312 @@
+input#control-nav {
+    /*sumir com a caixa do input, ele existe, mas ele existe*/
+    visibility: hidden;
+    opacity: 0;
+}
+
+@media screen and (max-width:1080px){
+    header .control-nav {
+        position: absolute;
+        /*posicao absoluta no html renderizado*/
+        right: 20px;
+        top: 40px;
+        display: block;
+        width: 30px;
+        padding: 5px 0;
+        border: solid #ff7b22 ;
+        border-width: 3px 0;
+        cursor: pointer;
+        z-index: 3;
+    }
+
+
+    header .control-nav:before {
+        /*para copiar a barra e formar o menu sanduiche no mobile - ficará então com 3 linhas*/
+        background: #ff7b22;
+        display: block;
+        height: 2px;
+        content: '';
+    }
+
+
+    header .control-nav-close {
+        /*cria  o layout de quando abre o menu mobile, a layer transparente -- testar mais --*/
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        display: block;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.4);
+        transform: translate(100%, 0);
+        /* transição do menu mobile quando ele estiver aberto*/
+        transition: all 500ms ease;
+    }
+
+
+    header nav {
+        background-color: rgba(153, 153, 153, 0.9);
+        border-left: solid #777 2px;
+        margin-right: 250px;
+        overflow-x: auto;
+        /*e fazer com que o elemento ficasse numa linha so e tivesse um scroll - para conseguir rolar e ver as informacoes*/
+        padding-right: 10%;
+        position: fixed;
+        top: 0;
+        right: -250px;
+        bottom: 0;
+        z-index: 2;
+        transform: translate(100%, 0);
+    }
+
+    nav ul {
+        display: block;
+    }
+
+    nav {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 80px 0 0 0;
+    }
+
+
+    nav a {
+        color: #ddd;
+    }
+
+
+    nav a:focus,
+    nav a:active {
+        /*para mobile ( no desktop seria o hover, o evento de clique - podemos usar o active e o focus */
+        color: white;
+    }
+
+
+    nav li a {
+        display: block;
+        line-height: 32px;
+        margin-right: 5px;
+    }
+
+
+    #control-nav:checked~.control-nav-close,
+    /*seletor avançado*/
+    #control-nav:checked~nav {
+        /** se esse o control-nav estiver checked estiver checado, ele receberá as proproedas abaixo*/
+        transform: translate(0, 0);
+        /*transição de abrir e fechar o menu hamburger*/
+
+    }
+}
+
+
+@media screen and (max-width:930px) {
+    header .control-nav {
+        position: absolute;
+        /*posicao absoluta no html renderizado*/
+        right: 20px;
+        top: 40px;
+        display: block;
+        width: 30px;
+        padding: 5px 0;
+        border: solid#ff7b22 ;
+        border-width: 3px 0;
+        cursor: pointer;
+        z-index: 3;
+    }
+
+
+    header .control-nav:before {
+        /*para copiar a barra e formar o menu sanduiche no mobile - ficará então com 3 linhas*/
+        background: #ff7b22;
+        display: block;
+        height: 2px;
+        content: '';
+    }
+
+
+    header .control-nav-close {
+        /*cria  o layout de quando abre o menu mobile, a layer transparente -- testar mais --*/
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        display: block;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.4);
+        transform: translate(100%, 0);
+        /* transição do menu mobile quando ele estiver aberto*/
+        transition: all 500ms ease;
+    }
+
+
+    header nav {
+        background-color: rgba(153, 153, 153, 0.9);
+        border-left: solid #777 2px;
+        margin-right: 250px;
+        overflow-x: auto;
+        /*e fazer com que o elemento ficasse numa linha so e tivesse um scroll - para conseguir rolar e ver as informacoes*/
+        padding-right: 10%;
+        position: fixed;
+        top: 0;
+        right: -250px;
+        bottom: 0;
+        z-index: 2;
+        transform: translate(100%, 0);
+    }
+
+    nav ul {
+        display: block;
+    }
+
+    nav {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 80px 0 0 0;
+    }
+
+
+    nav a {
+        color: #ddd;
+    }
+
+
+    nav a:focus,
+    nav a:active {
+        /*para mobile ( no desktop seria o hover, o evento de clique - podemos usar o active e o focus */
+        color: white;
+    }
+
+    nav ul li {
+        padding: 5px;
+    }
+
+    nav li  {
+        display: block;
+        line-height: 32px;
+        margin-right: 5px;
+        margin-left: 50px;
+    }
+
+
+    #control-nav:checked~.control-nav-close,
+    /*seletor avançado*/
+    #control-nav:checked~nav {
+        /** se esse o control-nav estiver checked estiver checado, ele receberá as proproedas abaixo*/
+        transform: translate(0, 0);
+        /*transição de abrir e fechar o menu hamburger*/
+
+    }
+
+}
+
+@media screen and (max-width:640px) {
+
+
+    header .control-nav {
+        position: absolute;
+        /*posicao absoluta no html renderizado*/
+        right: 20px;
+        top: 40px;
+        display: block;
+        width: 30px;
+        padding: 5px 0;
+        border: solid#ff7b22 ;
+        border-width: 3px 0;
+        cursor: pointer;
+        z-index: 3;
+    }
+
+
+    header .control-nav:before {
+        /*para copiar a barra e formar o menu sanduiche no mobile - ficará então com 3 linhas*/
+        background: #ff7b22;
+        display: block;
+        height: 2px;
+        content: '';
+    }
+
+
+    header .control-nav-close {
+        /*cria  o layout de quando abre o menu mobile, a layer transparente -- testar mais --*/
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        display: block;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.4);
+        transform: translate(100%, 0);
+        /* transição do menu mobile quando ele estiver aberto*/
+        transition: all 500ms ease;
+    }
+
+
+    header nav {
+        background-color: rgba(153, 153, 153, 0.9);
+        border-left: solid #777 2px;
+        margin-right: 250px;
+        overflow-x: auto;
+        /*e fazer com que o elemento ficasse numa linha so e tivesse um scroll - para conseguir rolar e ver as informacoes*/
+        padding-right: 10%;
+        position: fixed;
+        top: 0;
+        right: -250px;
+        bottom: 0;
+        z-index: 2;
+        transform: translate(100%, 0);
+    }
+
+    nav ul {
+        display: block;
+    }
+
+    nav {
+        position: fixed;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 80px 0 0 0;
+    }
+
+
+    nav a {
+        color: #ddd;
+    }
+
+
+    nav a:focus,
+    nav a:active {
+        /*para mobile ( no desktop seria o hover, o evento de clique - podemos usar o active e o focus */
+        color: white;
+    }
+    
+    nav ul li {
+        padding: 5px;
+    }
+
+    nav li  {
+        display: block;
+        line-height: 32px;
+        margin-right: 5px;
+        margin-left: 50px;
+    }
+
+
+    #control-nav:checked~.control-nav-close,
+    /*seletor avançado*/
+    #control-nav:checked~nav {
+        /** se esse o control-nav estiver checked estiver checado, ele receberá as proproedas abaixo*/
+        transform: translate(0, 0);
+        /*transição de abrir e fechar o menu hamburger*/
+
+    }
+}

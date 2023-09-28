@@ -1,0 +1,71 @@
+/* Estilos para o carrossel */
+
+#carousel {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-container {
+  display: flex;
+  width: 100%;
+  overflow: hidden; /* Adicione esta linha para ocultar conteúdo fora da tela */
+  position: relative; /* Adicione esta linha para ajustar a posição dos slides */
+}
+
+.carousel-slide {
+  flex: 0 0 100%;
+  max-width: 100%;
+  transition: transform 0.5s ease; /* Adicione esta linha para animar a transição entre os slides */
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Estilos para os botões do carrossel */
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #11d8be;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
+}
+
+.carousel-button:hover {
+  background-color: #fff;
+  color: #11d8be;
+}
+
+/* Adicione o estilo abaixo para garantir que os slides sejam visíveis */
+.carousel-container.active-slide-1 {
+  transform: translateX(0%);
+}
+
+.carousel-container.active-slide-2 {
+  transform: translateX(-100%);
+}
+
+.carousel-container.active-slide-3 {
+  transform: translateX(-200%);
+}
+
+.carousel-container.active-slide-4 {
+  transform: translateX(-300%);
+}

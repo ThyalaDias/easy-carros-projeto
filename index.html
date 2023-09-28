@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
+<link rel="stylesheet" href="css/style.css"> <!-- Global CSS -->
+<link rel="stylesheet" href="css/menu-mobile.css"> <!-- Mobile CSS -->
+<link rel="stylesheet" href="css/carousel.css"> <!-- Carousel CSS -->
+<script src="https://kit.fontawesome.com/2d5a50068d.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+<body>
+<header>
+<h1>
+    <img src="images/easycarros-logo 1.png" alt="nome da empresa">
+</h1>
+
+<!-- MENU MOBILE -->
+<input type="checkbox" id="control-nav">
+<label for="control-nav" class="control-nav"></label>
+<label for="control-nav" class="control-nav-close"></label>
+
+<!-- MENU BAR -->
+<nav>
+    <ul>
+        <li>
+            <a class="active" href="#">Home</a>
+        </li>
+
+        <li>
+            <a href="#">Carros</a>
+        </li>
+
+        <li>
+            <a href="pages/pagamento.html">Pagamento</a>
+        </li>
+
+        <li>
+            <a href="pages/cadastro.html">Histórico</a>
+        </li>
+    </ul>
+</nav>
+</header>
+
+<!-- CARROSSEL DE IMAGENS -->
+<section id="carousel">
+    <div class="carousel-container">
+        <div class="carousel-slide">
+            <img src="images/banner 1.png" alt="planos mensais">
+        </div>
+        <div class="carousel-slide">
+            <img src="images/banner 2.png" alt="oferta de diferentes modalidades de treino">
+        </div>
+        <div class="carousel-slide">
+            <img src="images/banner 1.png" alt="blog da academia">
+        </div>
+        <div class="carousel-slide">
+            <img src="images/banner 2.png" alt="planos para atletas de elite">
+        </div>
+    </div>
+
+    <button class="carousel-button prev">
+        <i class="fas fa-chevron-left"></i>
+    </button>
+    <button class="carousel-button next">
+        <i class="fas fa-chevron-right"></i>
+    </button>
+</section>
+
+<section class="search-container">
+<div class="search-box">
+    <div class="search-input">
+        <input type="text" id="car-search" placeholder="Pesquisar carros e lugares">
+    </div>
+    <div class="date-picker">
+        <input type="date" id="return-date" placeholder="Data de Entrega">
+        <span class="calendar-icon"><i class="far fa-calendar-alt"></i></span>
+    </div>
+    <div class="date-picker">
+        <input type="date" id="pickup-date" placeholder="Data de Retirada">
+        <span class="calendar-icon"><i class="far fa-calendar-alt"></i></span>
+    </div>
+    <button id="search-button">Procurar</button>
+</div>
+</section>
+
+<!-- SEÇÃO SOBRE O MODO DE FUNCIONAMENTO -->
+<section class="about-container">
+<div class="about-image">
+    <img src="images/capa_nosso_modelo.png" alt="Modo de Funcionamento">
+</div>
+</section>
+
+<!-- GRID DE CARROS POPULARES EM PROMOÇÃO -->
+<section class="popular-cars-container">
+<h2>Carros Populares em Promoção</h2>
+<div class="popular-cars-grid">
+    <div class="popular-car-card">
+        <img src="images/fiat-mobi.jpg" alt="Carro 1">
+        <h3>Carro 1</h3>
+        <p>Modelo: Sedan</p>
+        <p>Preço por dia: $50</p>
+        <button class="rent-button">Alugue</button>
+    </div>
+    <div class="popular-car-card">
+        <img src="images/FIT_EX.png" alt="Carro 2">
+        <h3>Carro 2</h3>
+        <p>Modelo: SUV</p>
+        <p>Preço por dia: $60</p>
+        <button class="rent-button">Alugue</button>
+    </div>
+    <div class="popular-car-card">
+        <img src="images/fiat-mobi.jpg" alt="Carro 3">
+        <h3>Carro 3</h3>
+        <p>Modelo: Hatchback</p>
+        <p>Preço por dia: $45</p>
+        <button class="rent-button">Alugue</button>
+    </div>
+    <!-- Adicione mais cards de carros conforme necessário -->
+</div>
+</section>
+
+<footer class="footer">
+<div class="row">
+    <div class="footer-coluna">
+        <h4>Sobre </h4>
+        <ul>
+            <li><a href="javascript:;" onclick="msg()">Sobre nós</a></li>
+            <li><a href="javascript:;" onclick="msg()">Nossos serviços</a></li>
+            <li><a href="javascript:;" onclick="msg()">Politica de privacidade</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-coluna">
+        <h4>Para você</h4>
+        <ul>
+            <li><a href="javascript:;" onclick="msg()" class="b-click">Minhas reservas</a></li>
+            <li><a href="javascript:;" onclick="msg()">Fidelidade</a></li>
+            <li><a href="javascript:;" onclick="msg()">Cadastre-se</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-coluna">
+        <h4>Dúvidas</h4>
+        <ul>
+            <li><a href="javascript:;" onclick="msg()">FAQ</a></li>
+            <li><a href="javascript:;" onclick="msg()">Seja um franqueado</a></li>
+            <li><a href="javascript:;" onclick="msg()">Política de pagamento </a></li>
+        </ul>
+    </div>
+    <div class="footer-coluna">
+        <h4>Redes</h4>
+        <div class="social-links">
+            <a href="javascript:;" onclick="msg()"><i class="fab fa-facebook-f"></i></a>
+            <a href="javascript:;" onclick="msg()"><i class="fab fa-twitter"></i></a>
+            <a href="javascript:;" onclick="msg()"><i class="fab fa-instagram"></i></a>
+            <a href="javascript:;" onclick="msg()"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+</div>
+<p>&copy; Alguns direitos reservados | &lt;GLNTV&gt;</p>
+</footer>
+
+<script src="script/index.js"></script>
+
+</body>
+</html>

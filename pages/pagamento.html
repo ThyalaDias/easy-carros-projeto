@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/pagamento.css">
+    <link rel="stylesheet" href="../css/menu-mobile.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/2d5a50068d.js" crossorigin="anonymous"></script>
+
+    <title>Pagamento</title>
+</head>
+
+
+<body>
+
+<header>
+    <h1>
+        <img src="../images/easycarros-logo 1.png" alt="nome da empresa">
+    </h1>
+
+    <!--MENU MOBILE -->
+    <input type="checkbox" id="control-nav">
+    <label for="control-nav" class="control-nav"></label>
+    <label for="control-nav" class="control-nav-close"></label>
+
+    <!--MENU BAR -->
+    <nav>
+        <ul>
+            <li>
+                <a class="active" href="../index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="#">Carros</a>
+            </li>
+
+            <li>
+                <a class="active" href="../pages/pagamento.html">Pagamento</a>
+            </li>
+
+            <li>
+                <a href="#">Histórico</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+<form>
+    <section class="payment-container">
+        <h1>Como você deseja pagar?</h1>
+
+        <!-- PIX -->
+        <div class="payment-option">
+            <input type="radio" name="metodoPagamento" id="pix">
+            <label for="pix">Pix</label>
+            <p class="texto-pagamentos">Desconto de 7% em pagamentos à vista</p>
+
+            <div id="pixForm" class="hidden">
+                <img src="../images/qrcode.png" alt="QR Code Pix">
+                    <p>Chave Pix: 1234567890</p>
+            </div>
+        </div>
+
+        <!-- CARTÃO DE CREDITO -->
+        <div class="payment-option">
+            <input type="radio" name="metodoPagamento" id="cartaoCredito">
+            <label for="cartaoCredito">Cartão de Crédito</label>
+            <p class="texto-pagamentos">Aceitamos Visa, MasterCard, Amex, Elo, Hipercard</p>
+            <p class="texto-pagamentos">Pagamento em até 12x sem juros</p>
+
+    
+            <div id="cartaoCreditoForm" class="hidden">
+                <div class="form-group">
+                    <span for="Número do Cartão">Validade</span>
+                    <input class="form-control" type="date" name="Validade">
+                </div>
+            
+                <div class="form-group">
+                    <span for="CVC">CVC</span>
+                    <input class="form-control" type="number" name="CVC" placeholder="000" required maxlength="3">
+                </div>
+            
+                <span for="nome">Nome</span>
+                <input class="form-control" type="text" name="nome" id="nome" autofocus placeholder="NOME COMO ESCRITO NO CARTÃO" maxlength="50">
+            
+                <div class="form-group">
+                    <span for="CPF">CPF</spa>
+                    <input class="form-control" type="string" name="CPF" placeholder="651.194.100-06" required maxlength="14">
+                </div>
+            </div>
+        </div>
+    
+
+        <!-- CARTÃO DE DÉBITO -->
+        <div class="payment-option">
+            <input type="radio" name="metodoPagamento" id="cartaoDebito">
+            <label for="cartaoDebito">Cartão de Débito</label>
+            <p class="texto-pagamentos">Aceitamos Visa, MasterCard, Elo</p>
+
+            <!-- Formulário de pagamento com cartão de débito -->
+            <div id="cartaoDebitoForm" class="hidden">
+                <div class="form-group">
+                    <span for="Número do Cartão">Validade</span>
+                    <input class="form-control" type="date" name="Validade">
+                </div>
+            
+                <div class="form-group">
+                    <span for="CVC">CVC</span>
+                    <input class="form-control" type="number" name="CVC" placeholder="000" required maxlength="3">
+                </div>
+            
+                <span for="nome">Nome</span>
+                <input class="form-control" type="text" name="nome" id="nome" autofocus placeholder="NOME COMO ESCRITO NO CARTÃO" maxlength="50">
+            
+                <div class="form-group">
+                    <span for="CPF">CPF</span>
+                    <input class="form-control" type="string" name="CPF" placeholder="651.194.100-06" required maxlength="14">
+                </div>
+    
+            </div>
+            </div>
+        </div>
+
+        <!-- Botão de concluir pagamento -->
+        <button class="btn-pagamento">Concluir Pagamento</button>
+    </section>
+
+    <footer class="footer">
+        <div class="row">
+            <div class="footer-coluna">
+                <h4>Sobre </h4>
+                <ul>
+                    <li><a href="javascript:;" onclick="msg()">Sobre nós</a></li>
+                    <li><a href="javascript:;" onclick="msg()">Nossos serviços</a></li>
+                    <li><a href="javascript:;" onclick="msg()">Politica de privacidade</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-coluna">
+                <h4>Para você</h4>
+                <ul>
+                    <li><a href="javascript:;" onclick="msg()" class="b-click">Minhas reservas</a></li>
+                    <li><a href="javascript:;" onclick="msg()">Fidelidade</a></li>
+                    <li><a href="javascript:;" onclick="msg()">Cadastre-se</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-coluna">
+                <h4>Dúvidas</h4>
+                <ul>
+                    <li><a href="javascript:;" onclick="msg()">FAQ</a></li>
+                    <li><a href="javascript:;" onclick="msg()">Seja um franqueado</a></li>
+                    <li><a href="javascript:;" onclick="msg()">Política de pagamento </a></li>
+                </ul>
+            </div>
+            <div class="footer-coluna">
+                <h4>Redes</h4>
+                <div class="social-links">
+                    <a href="javascript:;" onclick="msg()"><i class="fab fa-facebook-f"></i></a>
+                    <a href="javascript:;" onclick="msg()"><i class="fab fa-twitter"></i></a>
+                    <a href="javascript:;" onclick="msg()"><i class="fab fa-instagram"></i></a>
+                    <a href="javascript:;" onclick="msg()"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <p>&copy; Alguns direitos reservados | &lt;GLNTV&gt;</p>
+    </footer>
+
+
+    <!-- Seus scripts e o restante do HTML aqui -->
+    <script src="../scripts/pagamento.js"></script>
+
+</body>
+</html>
+
+
