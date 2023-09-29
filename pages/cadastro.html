@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/cadastro.css"> cadastro
-    <link rel="stylesheet" href="../css/menu-mobile.css"> mobile
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <link rel="stylesheet" href="../css/menu-mobile.css">
     <link rel="stylesheet" href="../css/style.css"> 
     <title>Formulário de Cadastro</title>
 </head>
@@ -47,34 +47,37 @@
         <form action="#" method="post">
 
             <label for="cpf">CPF:</label>
-            <input class="cpf" type="string" name="CPF" placeholder="___.___.___-__" required maxlength="14">
+            <input class="cpf" type="string" name="CPF" placeholder="Ex: 000.000.000-00" required maxlength="14">
 
             <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
+            <input type="text" id="nome" name="nome" placeholder="EX: Luísa Porto">
+
+            <label for="apelido">Como você gostaria de ser chamado(a)?:</label>
+            <input class="apelido" type="string" id="apelido" name="apelido" placeholder="EX: Lulu">
 
             <label for="data_nascimento">Data de Nascimento:</label>
             <input type="date" id="data_nascimento" name="data_nascimento" required>
 
             <label for="telefone">Telefone:</label>
-            <input class="tel" type="tel" id="telefone" name="telefone" placeholder="(__)_____-____"required maxlength="11">
+            <input class="tel" type="tel" id="telefone" name="telefone" placeholder="EX: (xx)xxxxx-xxxx" required maxlength="114">
 
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" placeholder="EX: porto_luísa@gmail.com" required>
 
             <label for="senha">Senha:</label>
-            <input type="password" id="senha" name="senha" required>
+            <input type="password" id="senha" name="senha" placeholder="Crie uma senha de 8 caracteres" required>
 
             <label for="cep">CEP:</label>
-            <input class="cep" type="string" name="CPF" placeholder="_____-___" required maxlength="9">
+            <input class="cep" type="string" name="CPF" placeholder="EX: 00000-000" required maxlength="9">
 
             <label for="rua">Rua:</label>
-            <input type="text" id="rua" name="rua" required>
+            <input type="text" id="rua" name="rua" placeholder="EX: Rua João Brícola" required>
 
             <label for="numero">Número:</label>
-            <input type="number" id="numero" name="numero" required>
+            <input type="number" id="numero" name="numero" placeholder="EX: 693" required>
 
             <label for="bairro">Bairro:</label>
-            <input class="bairro" type="string" id="bairro" name="bairro" required>
+            <input class="bairro" type="string" id="bairro" name="bairro" placeholder="EX: São Bento" required>
 
             <label for="pais">País:</label>
 <select id="pais" name="pais" required>
@@ -124,7 +127,7 @@
 </select>
 
             <label for="cidade">Cidade:</label>
-            <input class="cidade" type="string" id="cidade" name="cidade" required>
+            <input class="cidade" type="string" id="cidade" name="cidade" placeholder="EX: São Paulo" required>
 
             <button type="submit">Alterar cadastro</button>
         </form>
@@ -137,27 +140,49 @@
             <ul class="lista-corridas">
                 <li class="corrida">
                     <div class="corrida-info">
-                        <p>Data: 10/09/2023</p>
-                        <p>Origem: Aeroporto Internacional</p>
-                        <p>Destino: Centro da Cidade</p>
-                        <p>Valor: R$ 25,00</p>
-                    </div>
-                    <button class="ver-detalhes">Ver Detalhes</button>
+                        <p data-label="Data">10/09/2023</p>
+                        <p data-label="Origem">Aeroporto Internacional - Guarulhos-SP</p>
+                        <p data-label="Destino">Cataratas do Iguaçu - Foz do Iguaçú-PR</p>
+                        <p data-label="Carro">Nissan Kicks - Placa: JEN8K07</p>
+                        <p data-label="Tempo de uso"> 2 dias</p>
+                        <p data-label="Valor">R$ 387,00</p>
+
+                        <button type="submit">Ver detalhes</button>
+                    </form>
+                </div>
                 </li>
                 <li class="corrida">
                     <div class="corrida-info">
-                        <p>Data: 05/09/2023</p>
-                        <p>Origem: Casa</p>
-                        <p>Destino: Shopping Center</p>
-                        <p>Valor: R$ 15,00</p>
+                        <p data-label="Data">10/09/2023</p>
+                        <p data-label="Origem">Mercado Extra - Av. Dr. Ricardo Jafet, 1501</p>
+                        <p data-label="Destino">Casa</p>
+                        <p data-label="Carro">Fiat Argo - Placa: ECK-0488</p>
+                        <p data-label="Tempo de uso"> 48min</p>
+                        <p data-label="Valor">R$ 19,00</p>
                     </div>
-                    <button class="ver-detalhes">Ver Detalhes</button>
+                    <button type="submit">Ver detalhes</button>
+        </form>
+    </div>
                 </li>
-                <!-- Adicione mais corridas conforme necessário -->
             </ul>
         </div>
 
-    <div class="clearfix"></div> <!-- Elemento de limpeza -->
+    <div class="clearfix"></div>
+
+    <div class="fidelidade-container">
+        <h1>Programa de Fidelidade</h1>
+        <p>Adira ao nosso programa de fidelidade e ganhe recompensas exclusivas!</p>
+        <p>Por cada 10 corridas acima de R$ 50, ganhe 1 corrida gratuita.</p>
+        <ul>
+            <li>Ganhe pontos por cada corrida.</li>
+            <li>Descontos exclusivos para membros.</li>
+            <li>Corridas gratuitas a cada 10 corridas qualificadas.</li>
+        </ul>
+        <button>Adira Agora</button>
+    </div>
+
+    <div class="clearfix"></div>
+
 
     <footer class="footer">
         <div class="row">

@@ -10,6 +10,16 @@ body {
     background-color: white;
 }
 
+label.pix {
+    font-size: 12px;
+
+}
+
+::placeholder {
+    font-size: 13px;;
+    color: #959595b1;
+
+}
 
 
 /* Estilos para o contêiner principal */
@@ -36,17 +46,59 @@ body {
     border: solid #4a4848b1 1px;
 }
 
-.form-control {
+.numero-cartao {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
     margin: 5px 0;
-    width: 100%;
-    font-size: 16px;
+    width: 30%;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.validade {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+    width: 45;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+.cvc {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+    width: 12%;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.nome {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+    width: 60%;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.cpf {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+    width: 30%;
+    font-size: 18px;
+    margin-top: 15px;
 }
 
 label {
     font-weight: bold;
+    font-size: 30px;
 }
 
 .btn-success {
@@ -118,6 +170,7 @@ input[type="radio"]:checked + label.radio-label::before {
     text-align: center;
     margin-top: 50px; /* Distância do topo */
     margin-bottom: 50px; /* Distância do final */
+    font-size: 12px; /*tamanho letras miúdas */
 }
 
 .payment-container img {
@@ -134,7 +187,7 @@ input[type="radio"]:checked + label.radio-label::before {
 .payment-option {
     border: 1px solid #ccc;
     border-radius: 10px;
-    padding: 20px;
+    padding: 18px;
     margin: 10px 0;
     transition: border-color 0.3s;
 }
@@ -160,7 +213,7 @@ input[type="radio"]:checked + label.radio-label::before {
     content: "";
     position: absolute;
     left: 0;
-    top: 1px;
+    top: 11px;
     width: 20px;
     height: 20px;
     border: 2px solid #ccc;
