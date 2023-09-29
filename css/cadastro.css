@@ -35,12 +35,21 @@ body {
     float: right;
     margin-right: 90px;
     margin-top: 50px;
+    margin-bottom: 30px;
     padding-left: 10px;
 }
 
+.fidelidade{
+    margin: 0;
+    padding: 8px;
+    font-size: 16px;
+
+}
+
 p::before {
-    content: attr(data-label) ": ";
+    content: attr(data-label) " - ";
     font-weight: bold;
+    font-size: 16px;
 }
 
 p {
@@ -226,38 +235,32 @@ body {
     margin-right: 90px;
     margin-top: 20px;
     padding-left: 10px;
-    clear: right; /* Adicione esta propriedade */
+    clear: right;
 }
 
-h1 {
-    color: #333;
-}
+        h1 {
+            color: #333;
+            margin-left: 90px;
+            padding-bottom: 15px;
+        }
 
-p {
-    color: #000000;
-    margin-top: 10px;
-}
+        .progress-bar {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2px;
+        }
 
-ul {
-    list-style-type: disc;
-    color: #333;
-    text-align: left;
-    margin-top: 20px;
-    padding-left: 20px;
-}
+        .progress-bar .progress {
+            background-color: #007BFF;
+            color: #25ffe2;
+            border-radius: 4px;
+            padding: 4px 10px;
+        }
 
-button {
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 16px;
-    margin-top: 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
+        .progress-bar .progress::before {
+            content: "▓▓▓▓▓▓▓▓▓";
+            font-size: 18px;
+            padding: 5px ;
+        }
