@@ -5,13 +5,11 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Home</title>
-<link rel="stylesheet" href="css/style.css"> <!-- Global CSS -->
-<link rel="stylesheet" href="css/menu-mobile.css"> <!-- Mobile CSS -->
-<link rel="stylesheet" href="css/carousel.css"> <!-- Carousel CSS -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/menu-mobile.css"> 
+<link rel="stylesheet" href="css/carousel.css">
 <script src="https://kit.fontawesome.com/2d5a50068d.js" crossorigin="anonymous"></script>
-<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> -->
-    
+<title>Home</title>    
 </head>
 
 <body>
@@ -33,7 +31,7 @@
             </li>
 
             <li>
-                <a href="#">Carros</a>
+                <a href="pages/carros.html">Carros</a>
             </li>
 
             <li>
@@ -104,57 +102,83 @@
     
     <!-- Carrossel de Promoções de Carros -->
     <section class="carrossel-carros-container">
+        <h2>Nossos carros híbridos</h2>
+        <p>Explore nossos carros híbridos avançados, onde a economia de combustível se encontra com a tecnologia sustentável para uma experiência de condução excepcional</p>
         <button class="carrossel-carros-prev">
             <i class="fas fa-chevron-left"></i>
         </button>
-        <div class="carrossel-carros-wrapper">
-            <div class="carrossel-carros-item">
-                <img src="images/carros/carro1.jpg" alt="Carro 1">
-                <h4>Categoria: SUV</h4>
-                <p>Marca: Toyota</p>
-                <p>Ano: 2022</p>
-                <p>Preço da Hora: R$ 50,00</p>
-            </div>
+
+        <div class="carrossel-carros-viewport">
+            <div class="carrossel-carros-wrapper">
+                <div class="carrossel-carros-item">
+                    <img src="images/carros/civic.png" alt="Carro 1">
+                    <h4>Categoria: Sedan Hybrido</h4>
+                    <p>Honda Civic</p>
+                    <p>Ano: 2023</p>
+                    <p>Preço da Hora: R$ 55,00</p>
+                </div>
+                <div class="carrossel-carros-item">
+                    <img src="images/carros/toyota-corolla-cross.jpg" alt="Carro 2">
+                    <h4>Categoria: SUV</h4>
+                    <p>Corolla Cross</p>
+                    <p>Ano: 2021</p>
+                    <p>Preço da Hora: R$ 67,00</p>
+                </div>
+                <div class="carrossel-carros-item">
+                    <img src="images/carros/kona.png" alt="Carro 3">
+                    <h4>Categoria: Compact</h4>
+                    <p>Hyundai Kona</p>
+                    <p>Ano: 2021</p>
+                    <p>Preço da Hora: R$ 41,00</p>
+                </div>
         
-            <div class="carrossel-carros-item">
-                <img src="images/carros/carro1.jpg" alt="Carro 2">
-                <h4>Categoria: Sedan</h4>
-                <p>Marca: Honda</p>
-                <p>Ano: 2021</p>
-                <p>Preço da Hora: R$ 45,00</p>
-            </div>
+                <div class="carrossel-carros-item">
+                    <img src="images/carros/volvo-xc60.png" alt="Carro 4">
+                    <h4>Categoria: SUV</h4>
+                    <p>Volco XC60</p>
+                    <p>Ano: 2023</p>
+                    <p>Preço da Hora: R$ 85,00</p>
+                </div>
         
-            <div class="carrossel-carros-item">
-                <img src="images/carros/carro1.jpg" alt="Carro 3">
-                <h4>Categoria: Hatchback</h4>
-                <p>Marca: Ford</p>
-                <p>Ano: 2023</p>
-                <p>Preço da Hora: R$ 55,00</p>
-            </div> 
-            <div class="carrossel-carros-item">
-                <img src="images/carros/carro1.jpg" alt="Carro 1">
-                <h4>Categoria: SUV</h4>
-                <p>Marca: Toyota</p>
-                <p>Ano: 2022</p>
-                <p>Preço da Hora: R$ 50,00</p>
+                <div class="carrossel-carros-item">
+                    <img src="images/carros/kia-niro.png" alt="Carro 5">
+                    <h4>Categoria: Compact</h4>
+                    <p>Kia Niro</p>
+                    <p>Ano: 2022</p>
+                    <p>Preço da Hora: R$ 50,00</p>
+                </div> 
+
+                <div class="carrossel-carros-item">
+                    <img src="images/carros/consorcio-tiggo-5x.png" alt="Carro 6">
+                    <h4>Categoria: SUV</h4>
+                    <p>Tiggo 5x</p>
+                    <p>Ano: 2020</p>
+                    <p>Preço da Hora: R$ 65,00</p>
+                </div>
+                <div class="carrossel-carros-item">
+                    <img src="images/carros/haval_h6.png" alt="Carro 7">
+                    <h4>Categoria: SUV</h4>
+                    <p>Haval H6</p>
+                    <p>Ano: 2023</p>
+                    <p>Preço da Hora: R$ 65,00</p>
+                </div>
+                <div class="carrossel-carros-item">
+                    <img src="images/carros/Toyota-Prius-C.png" alt="Carro 8">
+                    <h4>Categoria: Sedan</h4>
+                    <p>Prius C</p>
+                    <p>Ano: 2023</p>
+                    <p>Preço da Hora: R$ 45,00</p>
+                </div>
+                <div class="carrossel-carros-item">
+                    <img src="images/carros/audi-q5.png" alt="Carro 9">
+                    <h4>Categoria: SUV</h4>
+                    <p>Audi Q5</p>
+                    <p>Ano: 2021</p>
+                    <p>Preço da Hora: R$ 90,00</p>
+                </div>
             </div>
+        </div>    
         
-            <div class="carrossel-carros-item">
-                <img src="images/carros/carro1.jpg" alt="Carro 2">
-                <h4>Categoria: Sedan</h4>
-                <p>Marca: Honda</p>
-                <p>Ano: 2021</p>
-                <p>Preço da Hora: R$ 45,00</p>
-            </div>
-        
-            <div class="carrossel-carros-item">
-                <img src="images/carros/carro1.jpg" alt="Carro 3">
-                <h4>Categoria: Hatchback</h4>
-                <p>Marca: Ford</p>
-                <p>Ano: 2023</p>
-                <p>Preço da Hora: R$ 55,00</p>
-            </div>
-        </div>
         <button class="carrossel-carros-next">
             <i class="fas fa-chevron-right"></i>
         </button>
@@ -191,8 +215,6 @@
             <a href="#">Saiba mais</a>
         </div>
     </div>
-
-    
 
     <footer class="footer">
         <div class="row">
@@ -235,9 +257,8 @@
         <p>&copy; Alguns direitos reservados | &lt;GLNTV&gt;</p>
     </footer>
 
-    <script src="script/index.js"></script>
     <script src="scripts/carousel-banner.js"></script>
-    <script src="scripts/caroulsel-carros.js"></script>
+    <script src="scripts/carousel-carros.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script> -->
 
 </body>

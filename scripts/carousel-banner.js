@@ -1,4 +1,3 @@
-
 let currentSlide = 0;
 
 function showSlide(n) {
@@ -29,5 +28,5 @@ showSlide(currentSlide);
 }
 
 // Auto play
-let autoPlayInterval = setInterval(nextSlide, 5000); // Change slide every 5 seconds
+let autoPlayInterval = setInterval(nextSlide, 5000);
 
