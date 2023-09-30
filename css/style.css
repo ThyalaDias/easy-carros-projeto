@@ -252,6 +252,13 @@ nav ul li:hover::after {
     flex-shrink: 0;
 }
 
+.carrossel-carros-item img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
 .carrossel-carros-prev,
 .carrossel-carros-next {
     position: absolute;
@@ -280,8 +287,6 @@ nav ul li:hover::after {
 .carrossel-carros-next:hover {
     color: #666;
 }
-
-
 
 
 /*CARDS NOVIDADE*/

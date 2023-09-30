@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/menu-mobile.css"> 
+<link rel="stylesheet" href="../css/carros.css">
+<script src="https://kit.fontawesome.com/2d5a50068d.js" crossorigin="anonymous"></script>
+<title>Home</title>    
+</head>
+
+<body>
+    <header>
+        <h1>
+            <img src="../images/easycarros-logo 1.png" alt="nome da empresa">
+        </h1>
+    
+        <!-- MENU MOBILE -->
+        <input type="checkbox" id="control-nav">
+        <label for="control-nav" class="control-nav"></label>
+        <label for="control-nav" class="control-nav-close"></label>
+    
+        <!-- MENU BAR -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+    
+                <li>
+                    <a class="active" href="#">Carros</a>
+                </li>
+    
+                <li>
+                    <a href="../pages/pagamento.html">Pagamento</a>
+                </li>
+    
+                <li>
+                    <a href="../pages/cadastro.html">Histórico</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="search-container">
+        <div class="search-box">
+            <div class="search-input">
+                <input type="text" id="car-search" placeholder="Onde você quer alugar?">
+                <div class="search-hint"></div>
+            </div>
+            <div class="date-picker">
+                <label for="pickup-date" class="texto1">Retirada</label>
+                <input type="date" id="pickup-date">
+            </div>
+            <div class="date-picker">
+                <label for="return-date" class="texto2">Devolução</label>
+                <input type="date" id="return-date">
+            </div>
+            <button id="search-button">Pesquisar</button>
+        </div>
+    </section>
+
+    
+    <!-- Mapa Interativo -->
+    <div class="container">
+        <div class="map-container">
+            <div id="map">
+                <img src="../images/mapa.png" alt="Mapa">
+            </div>
+        </div>
+    
+        <div class="car-info-container">
+            <div class="car-info">
+                <h2>Carro Disponível</h2>
+                <img src="../images/carros/kia-niro.png" alt="Carro">
+                <p>Kia Niro 2023</p>
+                <p>Localização: Rua da Gloria,256. A 315m</p>
+                <p>Preço da Hora: R$ 50,00</p>
+                <button class="rent-button">Alugar</button>
+            </div>
+    
+            <div class="car-info">
+                <h2>Carro Disponível</h2>
+                <img src="../images/carros/kona.png" alt="Carro">
+                <p>Hyundai Kona 2021</p>
+                <p>Localização: Rua da Gloria,256. A 230m</p>
+                <p>Preço da Hora: R$ 41,00</p>
+                <button class="rent-button">Alugar</button>
+            </div>
+    
+            <div class="car-info">
+                <h2>Carro Disponível</h2>
+                <img src="../images/carros/volvo-xc60.png" alt="Carro">
+                <p>Volvo XC60 2023</p>
+                <p>Localização: Rua dos Pinheiros, 1120. A 630m</p>
+                <p>Preço da Hora: R$ 85,00</p>
+                <button class="rent-button">Alugar</button>
+            </div>
+        </div>
+    </div>
+    
+    
+
+
+    <footer class="footer">
+        <div class="row">
+            <div class="footer-coluna">
+                <h4>Sobre </h4>
+                <ul>
+                    <li><a href="javascript:;" onclick="msg()">Sobre nós</a></li>
+                    <li><a href="javascript:;" onclick="msg()">Nossos serviços</a></li>
+                    <li><a href="javascript:;" onclick="msg()">Politica de privacidade</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-coluna">
+                <h4>Para você</h4>
+                <ul>
+                    <li><a href="javascript:;" onclick="msg()" class="b-click">Minhas reservas</a></li>
+                    <li><a href="javascript:;" onclick="msg()">Fidelidade</a></li>
+                    <li><a href="javascript:;" onclick="msg()">Cadastre-se</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-coluna">
+                <h4>Dúvidas</h4>
+                <ul>
+                    <li><a href="javascript:;" onclick="msg()">FAQ</a></li>
+                    <li><a href="javascript:;" onclick="msg()">Seja um franqueado</a></li>
+                    <li><a href="javascript:;" onclick="msg()">Política de pagamento </a></li>
+                </ul>
+            </div>
+            <div class="footer-coluna">
+                <h4>Redes</h4>
+                <div class="social-links">
+                    <a href="javascript:;" onclick="msg()"><i class="fab fa-facebook-f"></i></a>
+                    <a href="javascript:;" onclick="msg()"><i class="fab fa-twitter"></i></a>
+                    <a href="javascript:;" onclick="msg()"><i class="fab fa-instagram"></i></a>
+                    <a href="javascript:;" onclick="msg()"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <p>&copy; Alguns direitos reservados | &lt;GLNTV&gt;</p>
+    </footer>
+
+    <script src="../scripts/index.js"></script>
+</body>
+</html>
