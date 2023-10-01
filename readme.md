@@ -1,4 +1,1 @@
-- arrumar caminhos, 
-- arrumar mensagem toast liberacao carro
-- padding gabi
-- menu mobile
+Trabalho Segundo Semetre FIAP Desafio BRQ.
