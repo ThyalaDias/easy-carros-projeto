@@ -70,20 +70,24 @@
             <p class="texto-pagamentos">Aceitamos Visa, MasterCard, Amex, Elo, Hipercard</p>
             <p class="texto-pagamentos">Pagamento em até 12x sem juros</p>
 
-    
             <div id="cartaoCreditoForm" class="hidden">
+            <div class="form-group">
+                <span for="numero-cartao">Número do Cartão</span>
+                <input class="numero-cartao" type="number" name="numero-cartao" placeholder="0000 0000 0000 0000" required maxlength="15">
+            </div>
+
                 <div class="form-group">
-                    <span for="Número do Cartão">Validade</span>
-                    <input class="form-control" type="date" name="Validade">
+                    <span for="Validade do Cartão">Validade</span>
+                    <input class="validade" type="date" name="Validade">
                 </div>
             
                 <div class="form-group">
                     <span for="CVC">CVC</span>
-                    <input class="form-control" type="number" name="CVC" placeholder="000" required maxlength="3">
+                    <input class="cvc" type="number" name="CVC" placeholder="000" required maxlength="3">
                 </div>
             
                 <span for="nome">Nome</span>
-                <input class="form-control" type="text" name="nome" id="nome" autofocus placeholder="NOME COMO ESCRITO NO CARTÃO" maxlength="50">
+                <input class="nome" type="text" name="nome" id="nome" autofocus placeholder="NOME COMO ESCRITO NO CARTÃO" maxlength="50">
             
                 <div class="form-group">
                     <span for="CPF">CPF</spa>
@@ -100,18 +104,23 @@
             <p class="texto-pagamentos">Aceitamos Visa, MasterCard, Elo</p>
 
             <div id="cartaoDebitoForm" class="hidden">
+            <div class="form-group">
+                <span for="numero-cartao">Número do Cartão</span>
+                <input class="numero-cartao" type="number" name="numero-cartao" placeholder="0000 0000 0000 0000" required maxlength="15">
+            </div>
+
                 <div class="form-group">
-                    <span for="Número do Cartão">Validade</span>
-                    <input class="form-control" type="date" name="Validade">
+                    <span for="Validade do Cartão">Validade</span>
+                    <input class="validade" type="date" name="Validade">
                 </div>
             
                 <div class="form-group">
                     <span for="CVC">CVC</span>
-                    <input class="form-control" type="number" name="CVC" placeholder="000" required maxlength="3">
+                    <input class="cvc" type="number" name="CVC" placeholder="000" required maxlength="3">
                 </div>
             
                 <span for="nome">Nome</span>
-                <input class="form-control" type="text" name="nome" id="nome" autofocus placeholder="NOME COMO ESCRITO NO CARTÃO" maxlength="50">
+                <input class="nome" type="text" name="nome" id="nome" autofocus placeholder="NOME COMO ESCRITO NO CARTÃO" maxlength="50">
             
                 <div class="form-group">
                     <span for="CPF" >CPF</span>

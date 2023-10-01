@@ -12,44 +12,28 @@ body {
     min-height: 100vh;
 }
 
-/* Adicione as regras CSS abaixo */
-
-.container-principal {
-    display: flex;
-    justify-content: space-between; /* Coloca os formulários lado a lado em telas maiores */
-    flex-wrap: wrap; /* Permite que os formulários se empilhem em telas menores */
-    gap: 20px; /* Espaçamento entre os formulários */
-}
-
 .container {
-    width: calc(100% - 10px); /* Define a largura dos formulários para 50% com espaço para o gap */
-    width: 600px; /* Define uma largura máxima para evitar que os formulários fiquem muito largos */
-    padding: 20px; /* Adiciona algum espaço interno */
-    margin: 40px;
+    max-width: 600px;
+    width: 45%;
+    padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
-    text-align: left; /* Alinha o texto à esquerda */
+    float: left;
+    margin: 50px;
 }
 
 .historico-container {
-    height: auto;
-    width: calc(100% - 10px); /* Define a largura dos formulários para 50% com espaço para o gap */
-    width: 600px; /* Define uma largura máxima para evitar que os formulários fiquem muito largos */
-    padding: 20px; /* Adiciona algum espaço interno */
-    margin: 40px;
+    max-width: 600px;
+    width: 45%;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
     border-radius: 20px;
-    text-align: left; /* Alinha o texto à esquerda */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    float: right;
+    margin-right: 30px;
+    margin-top: 50px;
 }
-
-.container form,
-.historico-container form {
-    margin-top: 20px; /* Adiciona espaço entre os formulários */
-}
-
-
 
 .historico-container h2 {
     font-size: 24px;
@@ -91,6 +75,7 @@ body {
 .clearfix {
     clear: both;
 }
+/* Adicione outras regras de estilo conforme necessÃ¡rio */
 
 
 h2 {
@@ -192,61 +177,4 @@ label[for="estado"] {
     display: block;
     margin-top: 10px;
     margin-left: 15px;
-}
-
-@media screen and (max-width: 940px) {
-
-    .container,
-    .historico-container {
-        width: 100%; 
-        float: none; 
-        margin: 20px; 
-    }
-
-    .container form,
-    .historico-container form {
-        margin-top: 20px; 
-    }
-
-    .historico-container {
-        margin-top: 0; 
-    }
-}
-
-
-@media screen and (max-width: 640px) {
-    .container,
-    .historico-container {
-        width: 100%; 
-        margin: 20px;
-    }
-
-    .container form,
-    .historico-container form {
-        margin-top: 20px; 
-    }
-
-    .historico-container {
-        margin-top: 10px;
-        justify-self: center;
-        align-items: baseline;
-    }
-}
-
-@media screen and (max-width: 490px) {
-    .container,
-    .historico-container {
-        width: 100%; 
-        float: none; 
-        margin: 20px; 
-    }
-
-    .container form,
-    .historico-container form {
-        margin-top: 20px; 
-    }
-
-    .historico-container {
-        margin-top: 0; 
-    }
 }
