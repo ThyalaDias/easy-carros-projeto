@@ -63,35 +63,31 @@
             </div>
         </div>
 
-        <!-- CARTÃO DE CREDITO -->
+        <!-- CARTÃO DE CRÉDITO -->
         <div class="payment-option">
             <input type="radio" name="metodoPagamento" id="cartaoCredito">
             <label for="cartaoCredito">Cartão de Crédito</label>
             <p class="texto-pagamentos">Aceitamos Visa, MasterCard, Amex, Elo, Hipercard</p>
             <p class="texto-pagamentos">Pagamento em até 12x sem juros</p>
 
+    
             <div id="cartaoCreditoForm" class="hidden">
-            <div class="form-group">
-                <span for="numero-cartao">Número do Cartão</span>
-                <input class="numero-cartao" type="number" name="numero-cartao" placeholder="0000 0000 0000 0000" required maxlength="15">
-            </div>
-
                 <div class="form-group">
-                    <span for="Validade do Cartão">Validade</span>
-                    <input class="validade" type="date" name="Validade">
+                    <span for="Número do Cartão">Validade</span>
+                    <input class="form-control" type="date" name="Validade">
                 </div>
             
                 <div class="form-group">
                     <span for="CVC">CVC</span>
-                    <input class="cvc" type="number" name="CVC" placeholder="000" required maxlength="3">
+                    <input class="form-control" type="number" name="CVC" placeholder="000" required maxlength="3">
                 </div>
             
                 <span for="nome">Nome</span>
-                <input class="nome" type="text" name="nome" id="nome" autofocus placeholder="NOME COMO ESCRITO NO CARTÃO" maxlength="50">
+                <input class="form-control" type="text" name="nome" id="nome" autofocus placeholder="NOME COMO ESCRITO NO CARTÃO" maxlength="50">
             
                 <div class="form-group">
                     <span for="CPF">CPF</spa>
-                    <input class="form-control" type="string" name="CPF" placeholder="651.194.100-06" required maxlength="14">
+                    <input class="form-control" type="string" name="CPF" placeholder="000.000.000-00" required maxlength="14">
                 </div>
             </div>
         </div>
@@ -103,36 +99,27 @@
             <label for="cartaoDebito">Cartão de Débito</label>
             <p class="texto-pagamentos">Aceitamos Visa, MasterCard, Elo</p>
 
-            <!-- Formulário de pagamento com cartão de débito -->
             <div id="cartaoDebitoForm" class="hidden">
-            <div class="form-group">
-                <span for="numero-cartao">Número do Cartão</span>
-                <input class="numero-cartao" type="number" name="numero-cartao" placeholder="0000 0000 0000 0000" required maxlength="15">
-            </div>
-
                 <div class="form-group">
-                    <span for="Validade do Cartão">Validade</span>
-                    <input class="validade" type="date" name="Validade">
+                    <span for="Número do Cartão">Validade</span>
+                    <input class="form-control" type="date" name="Validade">
                 </div>
             
                 <div class="form-group">
                     <span for="CVC">CVC</span>
-                    <input class="cvc" type="number" name="CVC" placeholder="000" required maxlength="3">
+                    <input class="form-control" type="number" name="CVC" placeholder="000" required maxlength="3">
                 </div>
             
                 <span for="nome">Nome</span>
-                <input class="nome" type="text" name="nome" id="nome" autofocus placeholder="NOME COMO ESCRITO NO CARTÃO" maxlength="50">
+                <input class="form-control" type="text" name="nome" id="nome" autofocus placeholder="NOME COMO ESCRITO NO CARTÃO" maxlength="50">
             
                 <div class="form-group">
-                    <span for="CPF">CPF</span>
+                    <span for="CPF" >CPF</span>
                     <input class="form-control" type="string" name="CPF" placeholder="651.194.100-06" required maxlength="14">
                 </div>
     
             </div>
-            </div>
         </div>
-
-        <!-- Botão de concluir pagamento -->
         <button class="btn-pagamento">Concluir Pagamento</button>
     </section>
 
@@ -176,12 +163,8 @@
         </div>
         <p>&copy; Alguns direitos reservados | &lt;GLNTV&gt;</p>
     </footer>
-
-
-    <!-- Seus scripts e o restante do HTML aqui -->
+    
     <script src="../scripts/pagamento.js"></script>
 
 </body>
 </html>
-
-
