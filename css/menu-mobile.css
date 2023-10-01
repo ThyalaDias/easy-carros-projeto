@@ -13,7 +13,7 @@ input#control-nav {
         display: block;
         width: 30px;
         padding: 5px 0;
-        border: solid #ff7b22 ;
+        border: solid black ;
         border-width: 3px 0;
         cursor: pointer;
         z-index: 3;
@@ -22,7 +22,7 @@ input#control-nav {
 
     header .control-nav:before {
         /*para copiar a barra e formar o menu sanduiche no mobile - ficará então com 3 linhas*/
-        background: #ff7b22;
+        background: black;
         display: block;
         height: 2px;
         content: '';
@@ -112,7 +112,7 @@ input#control-nav {
         display: block;
         width: 30px;
         padding: 5px 0;
-        border: solid#ff7b22 ;
+        border: solid black ;
         border-width: 3px 0;
         cursor: pointer;
         z-index: 3;
@@ -121,7 +121,7 @@ input#control-nav {
 
     header .control-nav:before {
         /*para copiar a barra e formar o menu sanduiche no mobile - ficará então com 3 linhas*/
-        background: #ff7b22;
+        background: black;
         display: block;
         height: 2px;
         content: '';
@@ -217,7 +217,7 @@ input#control-nav {
         display: block;
         width: 30px;
         padding: 5px 0;
-        border: solid#ff7b22 ;
+        border: solid black;
         border-width: 3px 0;
         cursor: pointer;
         z-index: 3;
@@ -226,7 +226,7 @@ input#control-nav {
 
     header .control-nav:before {
         /*para copiar a barra e formar o menu sanduiche no mobile - ficará então com 3 linhas*/
-        background: #ff7b22;
+        background: black;
         display: block;
         height: 2px;
         content: '';

@@ -12,28 +12,41 @@ body {
     min-height: 100vh;
 }
 
+.container-principal {
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+}
+
 .container {
-    max-width: 600px;
-    width: 45%;
-    padding: 20px;
+    width: calc(100% - 10px); 
+    width: 600px; 
+    padding: 20px; 
+    margin: 40px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
-    float: left;
-    margin: 50px;
+    text-align: left; 
 }
 
 .historico-container {
-    max-width: 600px;
-    width: 45%;
+    height: auto;
+    width: calc(100% - 10px); 
+    width: 600px; 
+    padding: 20px; 
+    margin: 40px;
     background-color: #fff;
-    padding: 20px;
-    border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    float: right;
-    margin-right: 30px;
-    margin-top: 50px;
+    border-radius: 20px;
+    text-align: left; 
 }
+
+.container form,
+.historico-container form {
+    margin-top: 20px; 
+}
+
 
 .historico-container h2 {
     font-size: 24px;
@@ -43,28 +56,32 @@ body {
 
 .lista-corridas {
     list-style: none;
-    padding: 2px;
+    padding: 10px;
 }
 
 .corrida {
     border: 1px solid #ececec;
     background-color: #fff;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     padding: 10px;
     border-radius: 5px;
 }
 
 .corrida-info {
     margin-bottom: 10px;
+    text-align: left;
+    padding: 10px;
 }
 
 .ver-detalhes {
     background-color: #007BFF;
     color: #fff;
     border: none;
+    height: 50px;
     padding: 5px 10px;
-    border-radius: 3px;
+    border-radius: 10px;
     cursor: pointer;
+    margin-top: 30px;
 }
 
 .ver-detalhes:hover {
@@ -75,7 +92,6 @@ body {
 .clearfix {
     clear: both;
 }
-/* Adicione outras regras de estilo conforme necessÃ¡rio */
 
 
 h2 {
@@ -147,6 +163,7 @@ input[type="date"] {
 button {
     display: block;
     width: 50%;
+    height: 50px;
     padding: 10px;
     background-color: #007BFF;
     color: #fff;
@@ -177,4 +194,61 @@ label[for="estado"] {
     display: block;
     margin-top: 10px;
     margin-left: 15px;
+}
+
+@media screen and (max-width: 940px) {
+
+    .container,
+    .historico-container {
+        width: 100%; 
+        float: none; 
+        margin: 20px; 
+    }
+
+    .container form,
+    .historico-container form {
+        margin-top: 20px; 
+    }
+
+    .historico-container {
+        margin-top: 0; 
+    }
+}
+
+
+@media screen and (max-width: 640px) {
+    .container,
+    .historico-container {
+        width: 100%; 
+        margin: 20px;
+    }
+
+    .container form,
+    .historico-container form {
+        margin-top: 20px; 
+    }
+
+    .historico-container {
+        margin-top: 10px;
+        justify-self: center;
+        align-items: baseline;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .container,
+    .historico-container {
+        width: 100%; 
+        float: none; 
+        margin: 20px; 
+    }
+
+    .container form,
+    .historico-container form {
+        margin-top: 20px; 
+    }
+
+    .historico-container {
+        margin-top: 0; 
+    }
 }
