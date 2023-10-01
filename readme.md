@@ -1,2 +1,4 @@
-Trabalho Segundo Semetre FIAP
-Desafio BRQ.
+- arrumar caminhos, 
+- arrumar mensagem toast liberacao carro
+- padding gabi
+- menu mobile
